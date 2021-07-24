@@ -8,3 +8,16 @@ It is powered by wxWidgets, a cross-platform GUI library for C++.
 It uses cmake for easy compilation on Windows, macOS and Linux, credits to [JustDevTutorials](https://www.youtube.com/channel/UC4Q-KGKCeFbBpaAqwllCDqQ) and his [wx_cmake_template](https://github.com/lszl84/wx_cmake_template).
 
 Multi-language support is available.
+
+## Compile from source
+Currently the only available installation method is compiling from source.
+To do this, clone the repository using git:
+
+`git clone https://github.com/simonpla/VAT-Calculator.git`
+
+After that `cd` into the directory and run the following commands:
+```
+cmake -S. -Bbuild
+cmake --build build
+```
+The executable will be located under `build/subprojects/Build/wx_cmake_template_core/main` in Linux and macOS and under `build/subprojects/Build/wx_cmake_template_core/main/Debug/main.exe` in Windows.
